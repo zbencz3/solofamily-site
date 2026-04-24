@@ -1,116 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SoloFamily — Private parenting journal</title>
-<meta name="description" content="A private parenting record for solo parents. Log time with the kids, events, expenses. Monthly PDF export. On-device, no servers.">
-<style>
-  :root {
-    --bg: #000;
-    --card: #1b1b1e;
-    --border: #333;
-    --text: #fff;
-    --text2: #999;
-    --text3: #666;
-    --accent: #33d65c;
-    --accent2: #b051de;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
-    line-height: 1.55;
-    padding: 32px 20px 60px;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
-  h2 { font-size: 22px; font-weight: 700; margin: 32px 0 12px; }
-  p { margin-bottom: 14px; color: var(--text); }
-  p.lead { font-size: 18px; color: var(--text2); margin-bottom: 24px; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .mark {
-    display: inline-block;
-    width: 56px; height: 56px;
-    background: #0a0a0a;
-    border-radius: 14px;
-    color: var(--accent);
-    font-weight: 900; font-size: 28px;
-    line-height: 56px; text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 12px rgba(51, 214, 92, 0.45);
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 18px 20px;
-    margin-bottom: 14px;
-  }
-  ul { margin: 12px 0 16px 22px; color: var(--text); }
-  li { margin-bottom: 6px; }
-  .muted { color: var(--text2); font-size: 14px; }
-  .pill {
-    display: inline-block;
-    background: var(--accent);
-    color: #000;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 18px;
-    border-radius: 10px;
-    margin-top: 8px;
-  }
-  .pill.secondary {
-    background: transparent;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-  }
-  footer {
-    margin-top: 48px; padding-top: 20px;
-    border-top: 1px solid var(--border);
-    color: var(--text3);
-    font-size: 13px;
-  }
-  nav { margin-top: 18px; }
-  nav a { margin-right: 16px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoloFamily — Private parenting journal</title>
+  <meta name="description" content="A private parenting journal for solo parents. Log time with the kids, events, expenses. Monthly PDF export. On-device, no servers.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="mark">SF</div>
-  <h1>SoloFamily</h1>
-  <p class="lead">A private parenting journal.<br>Remember the days. Know the pattern. Keep it yours.</p>
+  <div class="mark" aria-hidden="true">sf</div>
+  <span class="micro">SoloFamily · a private journal</span>
+  <h1>Remember the days.<br>Know the pattern.<br>Keep it yours.</h1>
+  <p class="lead">A quiet record of the days for solo parents — time with the kids, events, expenses, and the small notes you'll want back.</p>
 
-  <div class="card">
-    <p>SoloFamily is a quiet record of the days for solo parents — log time with the kids, events, expenses, and free-form notes. Scroll back any day and remember. Export a beautiful monthly PDF when you want one.</p>
-    <p><strong>Nobody sees your data.</strong> No server. No account. No trackers. iCloud sync across your own devices, encrypted by Apple.</p>
+  <div class="card tinted-me">
+    <p>SoloFamily is a private iPhone journal. Scroll back any day and remember. Export a themed monthly PDF when you want one.</p>
+    <p><strong>Nobody sees your data.</strong> No server. No account. No trackers. Optional iCloud sync across your own devices, encrypted by Apple.</p>
   </div>
 
+  <svg class="squiggle" viewBox="0 0 120 10" aria-hidden="true">
+    <path d="M0 5 Q 10 0, 20 5 T 40 5 T 60 5 T 80 5 T 100 5 T 120 5"
+          fill="none" stroke="#FBEFE4" stroke-opacity="0.35" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+
   <h2>What's inside</h2>
-  <ul>
-    <li>Today view with the split for the month</li>
-    <li>Color-coded calendar</li>
+  <ul class="dots">
+    <li>Today view with the month split</li>
+    <li class="other">Color-coded calendar</li>
     <li>Periods with parent + caregiver + sleepovers</li>
-    <li>Events, expenses with photos and receipt scanning</li>
-    <li>Day notes for the small stuff</li>
+    <li class="event">Events — birthdays, games, appointments</li>
+    <li class="expense">Expenses with photos + receipt OCR</li>
+    <li class="flag">Day notes + custom flags</li>
     <li>Insights with custom ranges</li>
-    <li>PDF + CSV export (Pro)</li>
-    <li>Face ID lock, daily reminder, Siri shortcuts (Pro)</li>
+    <li class="expense">PDF + CSV export <em>(Pro)</em></li>
+    <li>Face ID lock, daily reminder, Siri Shortcuts <em>(Pro)</em></li>
   </ul>
 
   <h2>Pricing</h2>
-  <p>Free for unlimited logging. <strong>$29 one-time</strong> unlocks Pro (export, Face ID lock, daily reminder, receipt OCR, Siri shortcuts). No subscription.</p>
+  <p>Free for unlimited logging. <strong>Pro</strong> unlocks export, Face ID lock, daily reminder, receipt OCR, and un-gated Siri shortcuts.</p>
+  <ul>
+    <li><strong>Lifetime</strong> — one payment, no renewals.</li>
+    <li><strong>Yearly</strong> — auto-renewing subscription.</li>
+  </ul>
 
-  <nav>
+  <nav class="top">
     <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
     <a href="support.html">Support</a>
   </nav>
 
   <footer>
-    Made by Zsolt Bencze · Not affiliated with OurFamilyWizard, 2Houses, or TalkingParents.
+    Made by Zsolt Bencze. Not affiliated with OurFamilyWizard, 2Houses, or TalkingParents.
   </footer>
 </body>
 </html>
