@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoloFamily — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #000;
+    --card: #1b1b1e;
+    --border: #333;
+    --text: #fff;
+    --text2: #999;
+    --text3: #666;
+    --accent: #33d65c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 32px 20px 60px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 28px 0 10px; }
+  p { margin-bottom: 14px; }
+  a { color: var(--accent); }
+  .muted { color: var(--text2); font-size: 14px; margin-bottom: 24px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  ul { margin: 8px 0 14px 22px; }
+  li { margin-bottom: 6px; }
+  footer {
+    margin-top: 48px; padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text3);
+    font-size: 13px;
+  }
+  a.back { color: var(--accent); margin-top: 24px; display: inline-block; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: April 20, 2026</p>
+
+  <div class="card">
+    <p><strong>Short version:</strong> SoloFamily runs entirely on your iPhone. Your data doesn't leave your device unless you explicitly share it (PDF/CSV export). There is no server, no account, no tracking.</p>
+  </div>
+
+  <h2>What data SoloFamily stores</h2>
+  <p>Everything you enter: kids' names and optional photos and dates of birth, periods of time, events, expenses (with optional receipt photos), notes, custom flags, caregivers. It's all stored locally using Apple's SwiftData + SQLite.</p>
+
+  <h2>Where that data goes</h2>
+  <p><strong>Nowhere by default.</strong> Your log lives on the device you entered it on.</p>
+  <ul>
+    <li><strong>iCloud sync (optional):</strong> if you enable iCloud sync in SoloFamily's settings, Apple's CloudKit framework syncs your data across your own Apple devices, through your personal iCloud account. It is end-to-end encrypted by Apple and we cannot read it.</li>
+    <li><strong>Exports:</strong> when you export a PDF or CSV, the file is generated on-device. Where it goes next is whatever you do with it — save to Files, email, AirDrop, etc.</li>
+    <li><strong>Purchases:</strong> the Pro unlock purchase goes through Apple's StoreKit. Apple handles the transaction; SoloFamily only learns that Pro is unlocked.</li>
+  </ul>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No analytics, tracking SDKs, or third-party telemetry frameworks (no Firebase, no Mixpanel, no Sentry, no crash reporter).</li>
+    <li>No advertising, no ad identifiers.</li>
+    <li>No accounts, no email collection, no sign-in.</li>
+    <li>No ability to see or access your data on our end. There is no "our end."</li>
+  </ul>
+
+  <h2>Permissions SoloFamily may request</h2>
+  <ul>
+    <li><strong>Photos:</strong> so you can attach photos to events, kids, and receipts. The app only reads images you explicitly pick.</li>
+    <li><strong>Face ID / Touch ID:</strong> to lock the app, if you enable the feature. Biometrics are evaluated by the system; the app only receives a success/fail signal.</li>
+    <li><strong>Notifications:</strong> for the optional daily reminder. Sent locally by the system, not from a server.</li>
+    <li><strong>iCloud:</strong> only if you opt in. Uses your personal iCloud account.</li>
+  </ul>
+
+  <h2>Receipt scanning (OCR)</h2>
+  <p>When you attach a photo to an expense, SoloFamily uses Apple's on-device Vision framework to try to read the amount and date from the image. This happens entirely on your iPhone. The photo and the extracted text never leave the device.</p>
+
+  <h2>Children's privacy</h2>
+  <p>SoloFamily stores information about the user's children (names, photos, dates of birth) as part of a personal parenting record. This data is entered by the adult user, stored on their own device, and is not collected, transmitted, or accessed by SoloFamily or any third party.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the privacy practices ever change, this page will be updated and the "Last updated" date above will reflect that.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:zbencz3@protonmail.com">zbencz3@protonmail.com</a></p>
+
+  <a class="back" href="index.html">← Back to SoloFamily</a>
+
+  <footer>SoloFamily · Private parenting journal</footer>
+</body>
+</html>

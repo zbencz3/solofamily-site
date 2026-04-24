@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoloFamily — Support</title>
+<style>
+  :root {
+    --bg: #000;
+    --card: #1b1b1e;
+    --border: #333;
+    --text: #fff;
+    --text2: #999;
+    --text3: #666;
+    --accent: #33d65c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 32px 20px 60px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 28px 0 10px; }
+  p { margin-bottom: 14px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  ul { margin: 8px 0 14px 22px; }
+  li { margin-bottom: 6px; }
+  footer {
+    margin-top: 48px; padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text3);
+    font-size: 13px;
+  }
+  a.back { color: var(--accent); margin-top: 24px; display: inline-block; }
+</style>
+</head>
+<body>
+  <h1>Support</h1>
+
+  <div class="card">
+    <p>Need help, found a bug, or have a feature request? Two ways to reach me — pick whichever suits:</p>
+    <ul>
+      <li>Email (private): <a href="mailto:zbencz3@protonmail.com?subject=SoloFamily%20support">zbencz3@protonmail.com</a></li>
+      <li>GitHub issue (public, good for bugs + feature requests): <a href="https://github.com/zbencz3/solofamily/issues">github.com/zbencz3/solofamily/issues</a></li>
+    </ul>
+    <p>SoloFamily collects no crash logs or telemetry, so I only hear about problems when you tell me. An honest App Store review also helps — this small app is what supports a solo-parent family.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <h2>How do I back up my data?</h2>
+  <p>Settings → Export → pick a range → Export CSV. The CSV includes periods, events, and expenses and can be re-imported via Settings → Customise → Import log file (JSON format; CSV import coming later). You can also export a PDF for a human-readable archive.</p>
+
+  <h2>Why don't I see Pro features?</h2>
+  <p>If your purchase didn't unlock Pro features: Settings → Pro → Restore Purchase.</p>
+
+  <h2>iCloud sync</h2>
+  <p>iCloud sync is syncing data across your own Apple devices using your personal iCloud account. Your data is end-to-end encrypted by Apple; SoloFamily does not run any server and cannot read it.</p>
+
+  <h2>How do I delete a record?</h2>
+  <p>Open it (tap the entry on the calendar or a list) and tap the red Delete button at the bottom. On lists, you can also swipe left to delete.</p>
+
+  <h2>Does the app share my data with anyone?</h2>
+  <p>No. See the <a href="privacy.html">Privacy Policy</a> for full detail.</p>
+
+  <a class="back" href="index.html">← Back to SoloFamily</a>
+
+  <footer>SoloFamily · Private parenting journal</footer>
+</body>
+</html>
