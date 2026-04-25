@@ -200,6 +200,24 @@ nav.top {
 nav.top a { border-bottom: none; color: var(--ink-soft); }
 nav.top a:hover { color: var(--me); }
 
+/* App Store badge — official Apple PNG, link wraps it. Subtle drop
+   shadow lifts it off the bg-deep card without competing with the sf
+   mark gradient above. */
+p.appstore {
+  margin: 22px 0 8px 0;
+}
+p.appstore a {
+  border-bottom: none;
+  display: inline-block;
+}
+p.appstore img {
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
+  transition: transform 120ms ease;
+}
+p.appstore a:hover img {
+  transform: translateY(-1px);
+}
+
 a.back {
   display: inline-block;
   margin-top: 28px;
